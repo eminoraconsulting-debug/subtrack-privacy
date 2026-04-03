@@ -1,1 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Your Data - Subtrack</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0F172A;
+            --secondary: #64748B;
+            --text: #334155;
+            --bg: #F8FAFC;
+            --danger: #DC2626;
+            --danger-light: #FEF2F2;
+            --success: #16A34A;
+            --success-light: #F0FDF4;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 48px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: #3D5AFE;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1rem;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 8px;
+            letter-spacing: -0.025em;
+        }
+        .subtitle {
+            color: var(--secondary);
+            margin-bottom: 40px;
+            font-size: 1rem;
+        }
+        .alert {
+            background: var(--danger-light);
+            border: 1px solid #FECACA;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 32px;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+        .alert-icon { font-size: 1.2rem; flex-shrink: 0; }
+        .alert strong { color: var(--danger); display: block; margin-bottom: 4px; }
+        .alert p { margin: 0; font-size: 0.9rem; }
+        .method-card {
+            background: white;
+            border: 1px solid #E2E8F0;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        .method-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: #3D5AFE;
+            color: white;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+        .method-card h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 0 0 8px 0;
+        }
+        .method-card p {
+            margin: 0;
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+        .steps {
+            margin-top: 12px;
+            padding-left: 0;
+            list-style: none;
+        }
+        .steps li {
+            padding: 6px 0;
+            padding-left: 20px;
+            position: relative;
+            font-size: 0.9rem;
+        }
+        .steps li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3D5AFE;
+        }
+        .email-btn {
+            display: inline-block;
+            margin-top: 16px;
+            background: var(--danger);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background 0.2s;
+        }
+        .email-btn:hover { background: #B91C1C; }
+        .info-box {
+            background: var(--success-light);
+            border: 1px solid #BBF7D0;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-top: 32px;
+            font-size: 0.88rem;
+            color: #166534;
+        }
+        .info-box strong { display: block; margin-bottom: 4px; }
+        .footer {
+            margin-top: 60px;
+            padding-top: 32px;
+            border-top: 1px solid #E2E8F0;
+            color: var(--secondary);
+            font-size: 0.85rem;
+            text-align: center;
+        }
+        .footer a { color: #3B82F6; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-icon">S</div>
+            Subtrack
+        </div>
 
+        <h1>Delete Your Data</h1>
+        <p class="subtitle">We respect your right to data privacy. You can request the permanent deletion of your Subtrack account and all associated data at any time.</p>
+
+        <div class="alert">
+            <div class="alert-icon">⚠️</div>
+            <div>
+                <strong>This action is permanent and irreversible.</strong>
+                <p>Once your data is deleted, we cannot recover your subscription history, preferences, or account information.</p>
+            </div>
+        </div>
+
+        <div class="method-card">
+            <div class="method-number">1</div>
+            <h2>Delete In-App (Recommended)</h2>
+            <p>The fastest way to delete your data is directly from within the Subtrack app:</p>
+            <ul class="steps">
+                <li>Open the Subtrack app on your Android device.</li>
+                <li>Go to <strong>Settings</strong> (bottom navigation bar).</li>
+                <li>Scroll down to the <strong>"Danger Zone"</strong> section.</li>
+                <li>Tap <strong>"Delete Account"</strong> and confirm.</li>
+            </ul>
+            <p style="margin-top: 12px; font-size: 0.85rem; color: #94A3B8;">Your data will be wiped from the device and our cloud servers immediately.</p>
+        </div>
+
+        <div class="method-card">
+            <div class="method-number">2</div>
+            <h2>Request Deletion via Email</h2>
+            <p>If you no longer have access to the app, you can email us a deletion request. Please include your registered <strong>Google email address</strong> so we can locate your account.</p>
+            <a href="mailto:eminoraconsulting@gmail.com?subject=Subtrack%20Data%20Deletion%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20permanently%20delete%20my%20Subtrack%20account%20and%20all%20associated%20data.%0A%0AMy%20registered%20email%3A%20%5BYour%20Email%5D%0A%0AThank%20you." class="email-btn">
+                📧 Send Deletion Request
+            </a>
+        </div>
+
+        <div class="info-box">
+            <strong>⏱ What data gets deleted and how long does it take?</strong>
+            We will process emailed deletion requests within <strong>48 hours</strong>. The following data will be permanently removed:
+            Local subscription data on your device · Cloud-synced subscriptions in our database · Your authentication profile (Google Account link)
+        </div>
+
+        <div class="footer">
+            <a href="../">← Back to Privacy Policy</a> &nbsp;|&nbsp;
+            Subtrack by Eminora Consulting &nbsp;|&nbsp;
+            <a href="mailto:eminoraconsulting@gmail.com">eminoraconsulting@gmail.com</a>
+        </div>
+    </div>
+</body>
+</html>
